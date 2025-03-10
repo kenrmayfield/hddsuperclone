@@ -17,7 +17,7 @@
 
 #include "strncpy_wrapper.h"
 #include "util.h"
-
+//TODO: convert this file to the new logging system
 
 // Function to handle ctrl-c
 void signal_callback_handler_ccc(int signum)
