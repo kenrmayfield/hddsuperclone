@@ -13,6 +13,7 @@
 #include "io.h"
 #include "clone_gui_common.h"
 #include "util.h"
+//TODO: port this file to the logging functions in util.h
 
 unsigned char io_byte_ccc[16];
 uint8_t io_singlebyte_ccc;
@@ -78,7 +79,7 @@ int prepare_cdb_ccc(void)
   {
     fprintf (stdout, "CDB: ");
     int i;
-    for (i = 0; i < command_length_ccc; i++)
+    for (i = 0; i < command_length_ccc; i++) //TODO: add hexdump() util.c function
     {
       fprintf (stdout, "%02x ", passthrough_ccc.scsi_cmd[i]);
     }
@@ -88,7 +89,7 @@ int prepare_cdb_ccc(void)
   {
     fprintf (debug_file_ccc, "CDB: ");
     int i;
-    for (i = 0; i < command_length_ccc; i++)
+    for (i = 0; i < command_length_ccc; i++) //TODO: add hexdump() util.c function
     {
       fprintf (debug_file_ccc, "%02x ", passthrough_ccc.scsi_cmd[i]);
     }
