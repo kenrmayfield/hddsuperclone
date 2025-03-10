@@ -2409,7 +2409,7 @@ void help(void)
     " -h, --help                 Show this help and exit\n"
     "\n"
     "Report bugs to sdcomputingservice@gmail.com\n"
-    "Please be sure to include 'hddscviewer' in the subject line. \n";
+    "Please be sure to include 'hddscviewer' in the subject line. \n"
     "\n"
   ;
 
