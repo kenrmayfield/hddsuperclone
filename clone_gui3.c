@@ -66,7 +66,7 @@ int start_gtk_ccc(int argc, char **argv, char *title, char *version)
     exit(0);
   }
 
-  INFO("Language of the system: %s\n",getenv("LANG"));
+  INFO("Language of the system: %s",getenv("LANG"));
 
   set_language_ccc();
 
@@ -83,14 +83,14 @@ int start_gtk_ccc(int argc, char **argv, char *title, char *version)
   GError *err = NULL; // It is mandatory to initialize to NULL
   if(0 == gtk_builder_add_from_string (builder, (const gchar *)hddsuperclone3_glade, hddsuperclone3_glade_len, &err))
   {
-    ERROR("Error adding build from string. Error: %s\n", err->message);
+    ERROR("Error adding build from string. Error: %s", err->message);
     //TODO: should this exit?
   }
 
   main_window_ccc = GTK_WIDGET (gtk_builder_get_object (builder, "window_main"));
   if (NULL == main_window_ccc)
   {
-    ERROR("Object error: window_main\n");
+    ERROR("Object error: window_main");
     //TODO: should this exit?
   }
 
