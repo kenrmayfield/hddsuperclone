@@ -5,6 +5,8 @@ This repository continues the work on HDDSuperClone that was originally develope
 You can find the original website and more information here:
 http://www.hddsuperclone.com/
 
+ISO Download: https://drive.google.com/drive/folders/0B48xJNqot6ABUjNxa2VaME5INUE?resourcekey=0-Rr0CpQrMPt9-MaRMTiZo-A
+
 Videos about HDDSuperClone and it's many features: https://www.youtube.com/channel/UCXfHI8OX-KE_1-Tc9aCkQTQ/videos
 
 Other software that is used:
